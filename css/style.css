@@ -1,100 +1,179 @@
-html {
-	position: relative;
+body {
+	font-family: courier new;
 }
 
-body {
-	margin-bottom: 120px;
-	margin-top: 30px;
+.navbar {
+	margin-top: 20px;
+}
+
+/*.collapse {
+	margin-left: 120px;
+}*/
+
+.nav-item {
+	padding-right: 30px;
+	font-size: 18px;
+}
+
+.nav-item .nav-link {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+	color: darkgrey;
+}
+
+.nav-item .nav-link:after{
+	content: "";
+	display: block;
+	margin: auto;
+	width: 0;
+	height: 3px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.nav-item .nav-link:hover:after{
+	width: 100%;
+	background: darkblue;
 }
 
 .jumbotron {
-	height: 600px;
-	background-image: url(../img/bg-image.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: 0 -140px;
-	overflow: hidden;
+	margin-top: -40px;
+	margin-bottom: 2px;
+	background-color: white;
+}
+.jumbotron .lead {
+	font-size: 18px;
+}
+.jumbotron .lead span{
+	font-weight: bold;
+}
+
+
+.underline h1 {
+	font-weight: bold;
+	display: inline-block;
 	position: relative;
-}
+	padding-bottom: 3px;
+	/*text-decoration: none;*/
 
-.jumbotron img {
-	width: 200px;
-	border: 5px solid #ddd;
 }
-
-.jumbotron h1, .jumbotron p {
-	color: rgba(255,255,255,.8);
-	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+.underline h1:after{
+	content: "";
+	display: block;
+	margin: auto;
+	width: 0;
+	height: 3px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
 }
-
-hr {
-	width: 250px;
-	border-top: 3px solid #999;
-}
-
-section {
-	min-height: 600px;
-}
-
-.kiri, .kanan {
-	opacity: 0;
-	transform: translate(-50px, 0);
-	transition: 1.2s;
-}
-
-.kanan {
-	transform: translate(50px, 0);
-}
-
-.kiri-go, .kanan-go {
-	opacity: 1;
-	transform: translate(0, 0);
-}
-
-.portfolio {
-	background-color: #eee;
-}
-
-.portfolio .thumbnail {
-	opacity: 0;
-	transform: translate(0,-40px);
-	transition: .3s;
-}
-
-.portfolio .thumbnail.muncul {
-	opacity: 1;
-	transform: translate(0,0);
-}
-
-.contact {
-	min-height: 800px;
-}
-
-footer {
-	position: absolute;
-	bottom: 0;
+.underline h1:hover:after{
 	width: 100%;
-	height: 120px;
-	background-color: #333;
-	padding-top: 30px;
+	background: darkblue;
 }
 
-footer p {
-	color: #aaa;
-	font-size: 0.9em;
+.galleri img {
+	padding: 20px;
+	margin: auto;
+	width: 450px;
+	height: 350px;
+	display: block;
+  	-webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
+  	filter: blur(1px);
 }
 
-footer p i {
-	color: salmon;
+.overlay {
+	position: absolute;
+	padding: 20px;
+	margin-left: 37px;
+	top: 0;
+	bottom: 0;
+	/*left: 0;
+	right: 0;*/
+	height: 350px;
+	width: 450px;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: silver;
+}
+
+.galleri:hover .overlay {
+	opacity: 0.9;
+}
+
+.galleri .text {
+  	color: darkblack;
+  	font-weight: bold;
+  	font-size: 20px;
+  	position: absolute;
+  	/*padding: 20px;
+	margin: 20px;*/
+  	top: 50%;
+  	left: 50%;
+  	-webkit-transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+.myphoto img {
+	width: 200px;
+	height: 200px;
+	display: block;
+  	-webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
+  	filter: blur(1px);
+}
+
+.myphoto .overlay {
+	position: absolute;
+	margin-left: 0;
+	top: 0;
+	bottom: 0;
+	/*left: 0;
+	right: 0;*/
+	width: 200px;
+	height: 200px;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: black;
+}
+
+.myphoto:hover .overlay {
+	opacity: 1;
+}
+
+.myphoto .image {
+  	position: absolute;
+  	top: 50%;
+  	margin-left: 45px;
+  	
+  	-webkit-transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
 }
 
 
+.underline a {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+	color: darkgrey;
+	/*text-decoration: none;*/
 
+}
+.underline a:after{
+	content: "";
+	display: block;
+	margin: auto;
+	width: 0;
+	height: 3px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.underline a:hover:after{
+	width: 100%;
+	background: darkblue;
+}
 
-
-
-
-
-
-
-
+.footer nav-item {
+	margin-left: 0;
+}
