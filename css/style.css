@@ -2,12 +2,60 @@ body {
 	font-family: courier new;
 }
 
-/*.collapse {
-	margin-left: 120px;
-}*/
+.container .navbar {
+	color: #fff;
+}
+
+section {
+	background-image: url('https://images.unsplash.com/photo-1612831200091-c08595b18e6b?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+	background-size: cover;
+	background-position: 0 -100px;
+	padding: 0 0 20px;
+	color: #fff;
+}
+.container .banner {
+	margin-top: -30px;
+}
+.container .banner-1 {
+	text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
 .container .profile {
-	height: 300px;
-	width: 300px;
+	height: 150px;
+	width: 150px;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+.container .banner-1 h1 {
+	font-size: 20px;
+	text-shadow: rgba(0,0,0,.5);
+}
+.container .banner-2 h3 {
+	font-weight: 600;
+	font-size: 20px;
+	text-shadow: rgba(0,0,0,.5);
+}
+.container .banner-2 p {
+	font-size: 15px;
+	text-shadow: rgba(0,0,0,.5);
+}
+
+.container .typing {
+	overflow: hidden;
+  border-right: .1em solid #fff;
+  white-space: nowrap;
+  letter-spacing: .15em;
+  animation: ketik 10s steps(30, end) infinite , blink-caret .5s step-end infinite;
+  animation-delay: 2s;
+}
+
+/* efek ketik */
+@keyframes ketik {
+  from {width: 0}
+  to {width: 100%}
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fff }
 }
 
 .nav-item {
@@ -15,11 +63,12 @@ body {
 	font-size: 18px;
 }
 
-.nav-item .nav-link {
+.navbar .nav-item .nav-link {
 	display: inline-block;
 	position: relative;
 	padding-bottom: 3px;
-	color: darkgrey;
+	color: #fff;
+	text-shadow: rgba(0,0,0,.5);
 }
 
 .nav-item .nav-link:after{
@@ -47,7 +96,6 @@ body {
 .jumbotron .lead span{
 	font-weight: bold;
 }
-
 
 .underline h1 {
 	font-weight: bold;
@@ -176,4 +224,28 @@ body {
 
 .footer .nav-item {
 	margin-left: 0;
+}
+
+@media (min-width: 900px) {
+	.container .profile {
+		height: 200px;
+		width: 200px;
+		box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+	}
+	.container .banner {
+		margin-top: 0;
+	}
+	.container .banner h1 {
+		font-size: 40px;
+		text-shadow: rgba(0,0,0,.5);
+	}
+	.container .banner-2 h3 {
+		font-weight: 800;
+		font-size: 30px;
+		text-shadow: rgba(0,0,0,.5);
+	}
+	.container .banner-2 p {
+		font-size: 18px;
+		text-shadow: rgba(0,0,0,.5);
+	}
 }
