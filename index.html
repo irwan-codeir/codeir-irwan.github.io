@@ -1,175 +1,397 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="img/logo/irs.png">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>My Portfolio - Irwan</title>
+</head>
+<body id="home">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="img/logo-ir.png" alt="" width="30" class="d-inline-block align-top">
+				Irwan
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#projects">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#blog" >Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="jumbotron text-center mt-3">
+		<img src="img/1.jpg" alt="" width="200" class="img-thumbnail rounded-circle">
+		<h1 class="display-4">Irwan</h1>
+		<p class="lead">Web Programmer | IT Support</p>
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#resume">
+			View Resume
+		</button>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L48,192C96,160,192,96,288,90.7C384,85,480,139,576,154.7C672,171,768,149,864,165.3C960,181,1056,235,1152,224C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+	</section>
+
+	<!-- Modal Resume / CV -->
+	<div class="modal fade" id="resume" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">CV</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row bg-modal">
+						<div class="col-md-4 p-3 bg-resume text-white">
+							<div class="row">
+								<div class="col text-center">
+									<img src="img/cv.jpg" width="200" class="img-thumbnail rounded-circle">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<h3>IRWAN</h3>
+									<p>Web Programmer | IT Suppport</p>
+									<table class="table-sm text-white" style="font-size: 14px;">
+										<tbody>
+											<tr>
+												<td><i class="bi bi-info-circle"></i> </td>
+												<td>: 04-06-1989</td>
+											</tr>
+											<tr>
+												<td><i class="bi bi-pin-angle"></i> </td>
+												<td>: Jakarta</td>
+											</tr>
+											<tr>
+												<td><i class="bi bi-whatsapp"></i> </td>
+												<td>: <a href="https://api.whatsapp.com/send?phone=6287789066519">+62 877 8906 6519</a></td>
+											</tr>
+											<tr>
+												<td><i class="bi bi-envelope"></i> </td>
+												<td>: <a href="mailto:irwan.codeir@gmail.com">irwan.codeir@gmail.com</a></td>
+											</tr>
+											<tr>
+												<td><i class="bi bi-instagram"></i> </td>
+												<td>: <a href="https://www.instagram.com/irwvnesia/">www.instagram.com/irwvnesia/</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="row mt-3">
+								<div class="col">
+									<h3>About Me</h3>
+									<hr>
+									<p align="justify">Saya <b>Irwan</b> lahir di Cirebon, saat ini saya bekerja sebagai <i>IT Support</i> disalah satu perusahaan swasta di Jakarta Selatan. Salain itu saya juga lulusan jurusan <i>Teknik Informatika</i> di perguruan tinggi swasta di Kedoya Jakarta Barat</p>
+									<p align="justify"><b>Kelebihan</b> : <br>Komitmen, konsisten, dapat dipercaya, suka belajar hal baru dan tanggung jawab</p>
+									<p align="justify"><b>Kekurangan</b> : <br>Kurang fokus, agak susah kalo bicara (belibet), dan kurang percaya diri</p>
+								</div>
+							</div>
+							<div class="row mt-3">
+								<div class="col">
+									<h3>Skills</h3>
+									<hr>
+									HTML
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
+									</div>
+									CSS
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+									</div>
+									JavaScript
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+									</div>
+									Adobe XD
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85%</div>
+									</div>
+									<br>
+									PHP
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+									</div>
+									Python
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+									</div>
+									<br>
+									Network Fundamental
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+									</div>
+									Linux Fundamental
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">10%</div>
+									</div>
+									Juniper JNCIA-Junos
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">10%</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-8 p-3">
+							<div class="row">
+								<div class="col-md">
+									<span class="badge rounded-pill bg-info text-white fs-6 mb-2 mt-4">Interests</span>
+									<p>Sejarah dan teknologi</p>
+									<br>
+									<span class="badge rounded-pill bg-primary text-white fs-6 mb-2 mt-4">Education</span>
+									<table class="table-sm">
+										<tbody>
+											<tr>
+												<td>Sejak 2015 </td>
+												<td>Institut Sains & Teknologi Al-Kamal Kedoya - Jakarta Barat</td>
+												
+											</tr>
+											<tr>
+												<td></td>
+												<td>Jurusan Teknik Informatika</td>
+											</tr>
+											<tr>
+												<td>2005 - 2008</td>
+												<td>SMA Negeri I Losari - Cirebon</td>
+											</tr>
+											<tr>
+												<td>2002 - 2005</td>
+												<td>SMP Assuniyah Losari - Cirebon</td>
+											</tr>
+											<tr>
+												<td>1996 - 2002</td>
+												<td>Madrasah Ibtidaiyah Assuniyah Losari - Cirebon</td>
+											</tr>
+										</tbody>
+									</table>
+									<br>
+									<span class="badge rounded-pill bg-info text-white fs-6 mb-2 mt-4">Experience</span>
+									<table class="table-sm">
+										<tbody>
+											<tr>
+												<td>2018 - Sekarang </td>
+												<td>IT Support PT Api Metra Graha</td>
+												
+											</tr>
+											<tr>
+												<td>2011 - 2018</td>
+												<td>Data Entry / Scanner Klinik Mata Nusantara</td>
+											</tr>
+										</tbody>
+									</table>
+									<br>
+									<span class="badge rounded-pill bg-primary text-white fs-6 mb-2 mt-4">Certificate</span>
+									<table class="table-sm">
+										<tbody>
+											<tr>
+												<td>Network Fundamental</td>
+											</tr>
+											<tr>
+												<td>UI/UX Designer</td>
+											</tr>
+											<tr>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+									<br>
+									<span class="badge rounded-pill bg-info text-white fs-6 mb-2 mt-4">Other Information</span>
+									<p>Review</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Akhir Modal Resume -->
 
 
-    <title>Home - Irwan</title>
-  </head>
-  <body>
-    <section>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light mb-5">
-        <a class="navbar-brand" href="#">
-          <img src="img/logo/logo-ir.png" width="60" height="60" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portofolio.html">Portofolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+	<!-- about me -->
+	<section id="about">
+		<div class="container">
+			<!-- Content here -->
+			<div class="row text-center">
+				<div class="col">
+					<h2>About Me</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center mt-2 text-center">
+				<div class="col-md-4">
+					<p>Assalamualaikum wr wb, <br>Hallo... perkenalkan saya irwan. Saat ini saya bekerja sebagai freelancer Junior Web Programmer dan <b>IT Support</b> di salah satu perusahaan swasta di kawasan sudirman Jakarta Pusat</p>
+				</div>
+				<div class="col-md-4">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+				</div>
+			</div>
+		</div>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fefaf6" fill-opacity="1" d="M0,192L48,192C96,192,192,192,288,192C384,192,480,192,576,197.3C672,203,768,213,864,192C960,171,1056,117,1152,117.3C1248,117,1344,171,1392,197.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+	</section>
 
-        <div class="container mb-5">
-          <div class="row banner">
-            <div class="col-md-6 text-center banner-1">
-              <img class="rounded-circle profile mb-2" src="img/pasphoto.jpeg" alt="">
-              <h1><b>Irwan</b></h1>
-              <footer class="blockquote-footer">Web Programmer | IT Support</footer>
-            </div>
-            <div class="col-md-6 pt-2 banner-2">
-              <h3>Assalamualaikum Wr Wb.</h3>
-              <h3 class="typing">Hi, Nama saya Irwan</h3>
-              <p>lahir di Cirebon tahun 1989, anak ke-6 dari 9 bersaudara. Saat ini saya bekerja di PT Api Metra Graha sebagai <i>Field Engineer</i>(FE) atau <i>IT Support</i> dan saya kuliah mengambil jurusan Teknik Informatika di sebuah perguruan tinggi daerah jakarta barat.</p>
-              <!-- <a href="portofolio.html" class="btn btn-success">My Portfolio</a>
-              <a href="" class="btn btn-primary mr-2 ml-2">My Projects</a>
-              <a class="btn btn-success">My Skills</a> -->
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="container mt-5 underline">
-          <div class="row">
-            <div class="col-md-6">
-              <h1 class="font-weight-light">My Portfolio</h1>
-            </div>  
-            <div class="col-md-6">
-              
-            </div>
-          </div>
-        </div>
-
-
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md galleri">
-            <img src="img/galleri/g1.jpg" alt="website Teknik Industri" class="img-thumbnail img-responsive">
-            <div class="overlay text-center img-thumbnail">
-              <div class="text">IT Support</div>
-            </div>
-          </div>
-          <div class="col-md galleri">
-            <img src="img/galleri/g2.jpg" alt="website Teknik Industri" class="img-thumbnail img-responsive">
-            <div class="overlay text-center img-thumbnail">
-              <div class="text">Web Programming</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-<!-- <img src="img/galleri/g2.jpg" alt="website Jok Motor" class="img-thumbnail .img-responsive">
-            <div class="overlay">
-              <div class="text">Website Jok Motor</div>
-            </div>
-            <img src="img/galleri/g1.jpg" alt="website Teknik Industri" class="img-thumbnail img-responsive">
-            <img src="img/galleri/g2.jpg" alt="website Jok Motor" class="img-thumbnail .img-responsive"> -->
+	<section id="projects">
+		<div class="container">
+			<!-- Content here -->
+			<div class="row text-center">
+				<div class="col">
+					<h2>Projects</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center mt-3">
+				<div class="col-sm-4">
+					<div class="card" style="width: 18rem;">
+						<img src="img/2.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" style="width: 18rem;">
+						<img src="img/4.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" style="width: 18rem;">
+						<img src="img/5.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-4">
+					<div class="card" style="width: 18rem;">
+						<img src="img/6.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card" style="width: 18rem;">
+						<img src="img/3.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L48,160C96,192,192,256,288,250.7C384,245,480,171,576,138.7C672,107,768,117,864,133.3C960,149,1056,171,1152,181.3C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+	</section>
 
 
-        <div class="container mt-5 mb-2 underline">
-          <div class="row">
-            <div class="col-md-6">
-              <h1 class="font-weight-light">Let's Chat</h1>
-              <p>We’d love to chat about your business, send us an <a href="mailto: irwan.codeir@gmail.com">Email</a>.</p>
-            </div>  
-            <div class="col-md-6">
-              
-            </div>
-          </div>
-        </div>
 
-        <div class="container myphoto">
-          <div class="row">
-            <div class="col-md-6">
+	<!-- blog -->
+	<section id="blog">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col">
+					<h2>Blog</h2>
+				</div>
+			</div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fefaf6" fill-opacity="1" d="M0,160L48,181.3C96,203,192,245,288,240C384,235,480,181,576,138.7C672,96,768,64,864,64C960,64,1056,96,1152,122.7C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+	</section>
+	<!-- akhir blog -->
 
-            </div>  
-            <div class="col-md-6">
-              <img src="img/user.png" alt="my photo" class="img-thumbnail img-responsive">
-              <div class="overlay img-thumbnail">
-                <div class="image">
-                  <img src="img/pasphoto.jpeg" alt="my photo" class="img-thumbnail img-responsive">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+	<!-- contact -->
+	<section id="contact">
+		<div class="container">
+			<!-- Content here -->
+			<div class="row text-center">
+				<div class="col">
+					<h2>Contact Me</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center mt-3">
+				<div class="col-8">
+					<form>
+						<div class="form-group mb-3">
+							<label for="nama" class="form-label">Nama Lengkap</label>
+							<input type="text" class="form-control" id="nama" name="nama" placeholder="Enter name">
+						</div>
+						<div class="form-group mb-3">
+							<label for="email" class="form-label">Email</label>
+							<input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+						</div>
+						<div class="form-group mb-3">
+							<label for="pesan" class="form-label">Pesan</label>
+							<textarea class="form-control" id="pesan" name="pesan" rows="5"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,128L48,160C96,192,192,256,288,250.7C384,245,480,171,576,138.7C672,107,768,117,864,133.3C960,149,1056,171,1152,181.3C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+	</section>
+	<!-- akhir contact -->
 
-        <div class="container footer mt-5">
+	<!-- footer -->
+	<footer class="bg-dark text-center text-white pb-3">
+		<p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/irwvnesia/">Irwan</a></p>
+	</footer>
+	<!-- akhir footer -->
 
-          <div class="row">
-            <div class="col-md-6">
-            
-            </div>  
-            <div class="col-md-6 underline">
-              <ul class="nav">
-                <li class="nav-item" style="padding: 0;">
-                  <a class="nav-link active" href="https://twitter.com/irwan_djf">Twitter</a>
-                </li>
-                <li class="nav-item" style="padding: 0;">
-                  <a class="nav-link" href="https://www.facebook.com/ir.ones.35">Facebook</a>
-                </li>
-                <li class="nav-item" style="padding: 0;">
-                  <a class="nav-link" href="https://codeir-irwan.blogspot.com/">Blog</a>
-                </li>
-                <li class="nav-item" style="padding: 0;">
-                  <a class="nav-link" href="https://www.instagram.com/irwvnism/">Instagram</a>
-                </li>
-              </ul>
-            </div>
-          </div>
 
-          <div class="row mt-3 mb-5">
-            <div class="col-md-6">
-            
-            </div>  
-            <div class="col-md-6">
-              <p class="pl-3">(c) 2020 <a href="">CodeIR</a>. All Right Reserved</p>
-            </div>
-          </div>
+	<!-- Optional JavaScript; choose one of the two! -->
 
-        </div>
-        
-    </div>
-    
-    
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+	<!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+-->
+</body>
 </html>
