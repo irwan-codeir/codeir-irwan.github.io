@@ -54,6 +54,11 @@ body {
 	padding-top: 6rem;
 }
 
+/* blog */
+#blog img {
+	width: 200px;
+	height: 150px;
+}
 
 footer a {
 	text-decoration: none;
@@ -69,5 +74,14 @@ footer a {
 	.modal .bg-resume {
 		border-radius: 10px 10px 0 0;
 		background-color: #496595;
+	}
+
+	/* blog */
+	#blog img {
+		width: 100px;
+		height: 70px;
+	}
+	#blog p {
+		display: none;
 	}
 }
