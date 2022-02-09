@@ -58,7 +58,7 @@ body {
 		, rgb(255, 238, 196) -36.42%, rgb(254, 250, 246) 59.25%);
 }
 
-#about, #projects, #artikel {
+#about, #projects, #blog, #contact, #footer {
 	padding-top: 6rem;
 }
 
