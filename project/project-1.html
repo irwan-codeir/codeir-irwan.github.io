@@ -13,8 +13,9 @@
 </head>
 <body>
 
-    <!-- navbar -->
-<nav class="bg-white border-gray-200 shadow-lg px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+<!-- navbar -->
+<div class="relative z-10">
+<nav class="bg-white border-gray-200 shadow-lg px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 fixed top-0 left-0 right-0">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
         <a href="#" class="flex">
             <img src="../img/logo-ir.png" alt="logo" class="w-10 mr-2">
@@ -48,8 +49,9 @@
         </div>
     </div>
 </nav>
+</div>
 
-<div class="container mt-10">
+<div class="container mt-20">
     <h1 class="text-3xl font-sans font-bold mb-2 ml-4">Calculator</h1>
     <div class="max-w-xl m-auto grid grid-cols-4 gap-2 text-2xl text-center text-white rounded-lg shadow-lg border-2 p-4">    
         <input type="text" value="" id="output" class="output col-span-4 text-slate-900 rounded-md w-full h-16 border-2 border-sky-800 pr-3 pl-3 text-right">
