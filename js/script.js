@@ -227,3 +227,6 @@ var nilaiRandom = document.querySelector(".nilaiRandom");
         function formReset() {
             document.getElementById("formBiner").reset();
         }
+
+
+    
